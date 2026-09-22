@@ -13,9 +13,9 @@
 第1回の 010-070 で、全員そろって次の3手を行います。
 
 ```bash
-# 1. 上の「Use this template」で自分のリポジトリを作ってから clone する
-git clone <自分のリポジトリのURL>
-cd <リポジトリ名>
+# 1. clone する
+git clone https://github.com/y-tominaga82/advanced-seminar-2026f.git
+cd advanced-seminar-2026f
 
 # 2. ライブラリを入れる
 uv sync
