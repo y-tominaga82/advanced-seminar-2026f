@@ -1,0 +1,30 @@
+# === commit してはいけないもの =========================================
+# この2行は絶対に外さないでください（第2回「4つの約束」の3番目）
+
+# 生データ。出典から自分で取り直せるものは、リポジトリに置きません
+data/raw/*
+!data/raw/.gitkeep
+
+# APIキー・パスワードの類。一度commitすると履歴から消すのは非常に面倒です
+.env
+.env.*
+*.key
+credentials.json
+
+# === 作業中に勝手にできるもの ==========================================
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# macOS / Windows / エディタ
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# === commit してよいもの（念のため明示） ================================
+# data/public/   … 公開統計で1万行以下ならcommit可
+# outputs/       … summary の出力（.txt）や図
+# paper.md, research/, notes/, ai_log.md

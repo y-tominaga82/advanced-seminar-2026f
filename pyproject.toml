@@ -1,0 +1,14 @@
+[project]
+name = "seminar-fall-2026"
+version = "0.1.0"
+description = "秋学期 専門演習 / 実証研究レポート"
+requires-python = ">=3.10"
+
+# この3本だけを使います。追加は事前承認制です。
+# ライブラリを1本増やすたびに ModuleNotFoundError で誰かが止まるので、
+# 「あったほうが便利」では増やしません。
+dependencies = [
+    "pandas>=2.0,<3.0",
+    "statsmodels>=0.14,<0.15",
+    "matplotlib>=3.7,<4.0",
+]
